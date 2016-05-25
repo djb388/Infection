@@ -242,10 +242,15 @@ public class Clusters {
         double meanSize = 0;
         int maxSize = 0;
         int minSize = Integer.MAX_VALUE;
+        HashMap<Integer,Integer> numOfSizes = new HashMap<>();
         
         for (int i = 0; i < labels.length; i++) {
             
             int size = clusterPopulations.get(labels[i]).size();
+            
+            int numOfSize = numOfSizes.getOrDefault(size, 0) + 1;
+            numOfSizes.put(size, numOfSize);
+            
             meanSize += size;
             sizes[i] = size;
             
@@ -264,6 +269,7 @@ public class Clusters {
         double sizeStdDev = 0;
 
         for (int i = 0; i < sizes.length; i++) {
+            
             double error = sizes[i] - meanSize;
             sizeStdDev += error * error;
         }
@@ -272,18 +278,19 @@ public class Clusters {
         
         System.out.println("------------------------------------------------");
         
-        System.out.println("Size of every cluster larger than the mean cluster size:");
+        System.out.println("Size and number of every cluster:");
         System.out.println();
+        int lastSize = -1;
+        
         for (int i = 0; i < sizes.length; i++) {
             
-            if (sizes[i] > meanSize) {
-                System.out.print(sizes[i] + ",");
-                if (i > 40) {
-                    System.out.println();
-                    System.out.println();
-                }
+            if (numOfSizes.containsKey(sizes[i])) {
+                int nextSize = numOfSizes.remove(sizes[i]);
+                System.out.format("%10d,%d%n", sizes[i],nextSize);
             }
         }
+        
+        System.out.println();
         
         System.out.println("------------------------------------------------");
         

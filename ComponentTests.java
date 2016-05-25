@@ -57,8 +57,6 @@ public class ComponentTests {
         }
         int notCoachOrStudent = users.length
                 - coachesAndCoachedBy - justCoachedBy - justCoaches;
-
-        System.out.println("------------------------------------------------");
         
         // Get the max indices of the coaches and coached by relations
         int maxCoachesIndex = 1;
@@ -80,7 +78,7 @@ public class ComponentTests {
 
         for (int i = 0; i < maxCoachesIndex; i++) {
             
-            System.out.println("               " + i + ", " + coachesRelations[i]);
+            System.out.format("%10d,%d%n",i,coachesRelations[i]);
         }
         
         System.out.println("------------------------------------------------");
@@ -89,7 +87,7 @@ public class ComponentTests {
 
         for (int i = 0; i < maxCoachedByIndex; i++) {
             
-            System.out.println("               " + i + ", " + coachedByRelations[i]);
+            System.out.format("%10d,%d%n",i,coachedByRelations[i]);
         }
         
         System.out.println("------------------------------------------------");
