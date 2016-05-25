@@ -1,0 +1,88 @@
+run:
+#################################################
+#              INFECTION ALGORITHM              #
+#           Implemented by David Bell           #
+#################################################
+#                                               #
+#  A demonstration of infection algorithms      #
+#  which 'infect' a subset of a population.     #
+#  The population represents the users of a     #
+#  website, and the infection represents the    #
+#  spread of updates to the website.            #
+#                                               #
+#################################################
+
+Main menu; enter an option:
+
+ 1) User population options
+
+ 2) Print population variable values
+
+ 3) Verify clustering algorithm functionality
+
+ 4) Infection algorithm options
+
+ Any other key to exit the program
+> 4
+
+Infection menu; enter an option:
+
+ 1) Print website version for a user's cluster
+    -Prints the website version of all members in a
+     specific user's cluster
+
+ 2) Run total_infection on a specific user
+
+ 3) Run limited_infection
+
+ 4) Run tiered_infection
+
+    -Infects all users, dividing 4 website versions among
+     approximately 5%, 10%, 15%, and 70% of the population.
+
+ 5) Verify total_infection functionality
+    -Runs total_infection on 10 random users, comparing
+     its results to the clustering algorithm.
+
+ 6) Verify limited_infection functionality
+    -Runs limited_infection 10 times, comparing its
+     results to the clustering algorithm.
+
+ Any other key for the main menu
+> 6
+------------------------------------------------
+------- Infection algorithm verification -------
+------------------------------------------------
+------------------------------------------------
+  limited_infection test 1:
+    target infected population: 1287
+    actual infected population: 384
+  limited_infection test 2:
+    target infected population: 106
+    actual infected population: 103
+  limited_infection test 3:
+    target infected population: 93
+    actual infected population: 89
+  limited_infection test 4:
+    target infected population: 1014
+    actual infected population: 282
+  limited_infection test 5:
+    target infected population: 1224
+    actual infected population: 345
+  limited_infection test 6:
+    target infected population: 1554
+    actual infected population: 469
+  limited_infection test 7:
+    target infected population: 191
+    actual infected population: 129
+  limited_infection test 8:
+    target infected population: 1319
+    actual infected population: 420
+  limited_infection test 9:
+    target infected population: 794
+    actual infected population: 220
+------------------------------------------------
+
+
+Enter any key to continue...
+> 

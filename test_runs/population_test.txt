@@ -1,0 +1,125 @@
+run:
+#################################################
+#              INFECTION ALGORITHM              #
+#           Implemented by David Bell           #
+#################################################
+#                                               #
+#  A demonstration of infection algorithms      #
+#  which 'infect' a subset of a population.     #
+#  The population represents the users of a     #
+#  website, and the infection represents the    #
+#  spread of updates to the website.            #
+#                                               #
+#################################################
+
+Main menu; enter an option:
+
+ 1) User population options
+
+ 2) Print population variable values
+
+ 3) Verify clustering algorithm functionality
+
+ 4) Infection algorithm options
+
+ Any other key to exit the program
+> 1
+
+Population menu; enter an option:
+
+ 1) Print population statistics
+
+ 2) Cluster population and print cluster metadata
+
+ 3) Change number of users
+    -Controls the user population size
+
+ 4) Change max class size
+    -Sets the upper bound of the coaches relation
+
+ 5) Change student ratio adjustment
+    -Bigger numbers reduce the number of large
+     coaches relations (3-6 are typically ideal)
+
+ 6) Generate the new user population
+
+ Any other key for the main menu
+> 1
+
+------------------------------------------------
+---------- User population statistics ----------
+------------------------------------------------
+number of students a user coaches, number of users
+         0,84127
+         1,6121
+         2,3145
+         3,1902
+         4,1292
+         5,881
+         6,614
+         7,439
+         8,352
+         9,249
+        10,192
+        11,143
+        12,100
+        13,89
+        14,65
+        15,56
+        16,50
+        17,41
+        18,39
+        19,24
+        20,20
+        21,12
+        22,15
+        23,5
+        24,4
+        25,6
+        26,5
+        27,2
+        28,2
+        29,6
+        30,0
+        31,0
+        32,0
+        33,1
+------------------------------------------------
+number of coaches a user is coached by, number of users
+         0,59685
+         1,30774
+         2,8022
+         3,1329
+         4,173
+         5,16
+------------------------------------------------
+Users who are both students and coaches: 6339
+Users who are students, but not coaches: 33976
+Users who are coaches, but not students: 9534
+Users who are not coaches or students:   50151
+------------------------------------------------
+
+
+Enter any key to continue...
+> 2
+
+Population menu; enter an option:
+
+ 1) Print population statistics
+
+ 2) Cluster population and print cluster metadata
+
+ 3) Change number of users
+    -Controls the user population size
+
+ 4) Change max class size
+    -Sets the upper bound of the coaches relation
+
+ 5) Change student ratio adjustment
+    -Bigger numbers reduce the number of large
+     coaches relations (3-6 are typically ideal)
+
+ 6) Generate the new user population
+
+ Any other key for the main menu
+> 

@@ -1,0 +1,93 @@
+run:
+#################################################
+#              INFECTION ALGORITHM              #
+#           Implemented by David Bell           #
+#################################################
+#                                               #
+#  A demonstration of infection algorithms      #
+#  which 'infect' a subset of a population.     #
+#  The population represents the users of a     #
+#  website, and the infection represents the    #
+#  spread of updates to the website.            #
+#                                               #
+#################################################
+
+Main menu; enter an option:
+
+ 1) User population options
+
+ 2) Print population variable values
+
+ 3) Verify clustering algorithm functionality
+
+ 4) Infection algorithm options
+
+ Any other key to exit the program
+> 4
+
+Infection menu; enter an option:
+
+ 1) Print website version for a user's cluster
+    -Prints the website version of all members in a
+     specific user's cluster
+
+ 2) Run total_infection on a specific user
+
+ 3) Run limited_infection
+
+ 4) Run tiered_infection
+
+    -Infects all users, dividing 4 website versions among
+     approximately 5%, 10%, 15%, and 70% of the population.
+
+ 5) Verify total_infection functionality
+    -Runs total_infection on 10 random users, comparing
+     its results to the clustering algorithm.
+
+ 6) Verify limited_infection functionality
+    -Runs limited_infection 10 times, comparing its
+     results to the clustering algorithm.
+
+ Any other key for the main menu
+> 5
+------------------------------------------------
+---- total_infection algorithm verification ----
+------------------------------------------------
+  total_infection run 1:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 2:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 3:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 4:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 5:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 6:
+    expected infected population: 41708
+      actual infected population: 41708
+  total_infection run 7:
+    expected infected population: 1
+      actual infected population: 1
+  total_infection run 8:
+    expected infected population: 1
+      actual infected population: 1
+  total_infection run 9:
+    expected infected population: 1
+      actual infected population: 1
+  total_infection run 10:
+    expected infected population: 1
+      actual infected population: 1
+------------------------------------------------
+  Conclusion:
+    Infection is functioning properly
+------------------------------------------------
+
+
+Enter any key to continue...
+> 

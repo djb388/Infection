@@ -278,6 +278,7 @@ public class Main {
                     System.out.println("   Student ratio = " + COACH_RATIO);
                     System.out.println();
                     promptGo();
+                    System.out.println();
                     break;
 
                 case '3':
@@ -285,6 +286,7 @@ public class Main {
                     ComponentTests.clusteringAlgorithmTest(infection);
                     System.out.println();
                     promptGo();
+                    System.out.println();
                     break;
 
                 case '4':

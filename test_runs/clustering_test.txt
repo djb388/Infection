@@ -1,0 +1,84 @@
+run:
+#################################################
+#              INFECTION ALGORITHM              #
+#           Implemented by David Bell           #
+#################################################
+#                                               #
+#  A demonstration of infection algorithms      #
+#  which 'infect' a subset of a population.     #
+#  The population represents the users of a     #
+#  website, and the infection represents the    #
+#  spread of updates to the website.            #
+#                                               #
+#################################################
+
+Main menu; enter an option:
+
+ 1) User population options
+
+ 2) Print population variable values
+
+ 3) Verify clustering algorithm functionality
+
+ 4) Infection algorithm options
+
+ Any other key to exit the program
+> 3
+
+------------------------------------------------
+------ Clustering algorithm verification -------
+------------------------------------------------
+  Randomized clustering algorithm, run #1
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #2
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #3
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #4
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #5
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #6
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #7
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #8
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #9
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+  Randomized clustering algorithm, run #10
+         Largest cluster: 40519
+        Smallest cluster: 1
+    Average cluster size: 1
+------------------------------------------------
+------------------------------------------------
+  Mean absolute error of test runs:
+    Maximum cluster size error: 0.0
+    Minimum cluster size error: 0.0
+    Average cluster size error: 0.0
+
+  Conclusion:
+    Clustering algorithm is functioning properly
+------------------------------------------------
+
+
+Enter any key to continue...
+> 

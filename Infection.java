@@ -226,7 +226,7 @@ public class Infection extends Clusters {
                 ArrayList<Integer> cluster = clusterPopulations.get(clusterLabel);
                 
                 // If almost met the quota for this tier, do the next tier
-                if (numInfected[tier] > targetPercent[tier] * vertices.length) {
+                if (numInfected[tier] >= targetPercent[tier] * vertices.length) {
                     
                     tier -= 1;
                     
