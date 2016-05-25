@@ -97,16 +97,13 @@ public class Infection extends Clusters {
         int numInfected = 0;    // Running total users infected
         int numClustersInfected = 0;    // Running total clusters infected
 
-        int iterationThresh = vertices.length; // Max allowable iterations
-        int meanClusterSize = 0; // Mean cluster size to estimate iterationThresh
-
         // HashMap aggregates infected clusters
         HashMap<Integer, ArrayList<Integer>> infectedClusters = new HashMap<>();
 
         boolean[] closedSet = new boolean[vertices.length];
 
         // Until we iterate an unreasonable number of times, try to hit targetPop
-        for (int i = 0; i < iterationThresh; i++) {
+        for (int i = 0; i < vertices.length; i++) {
 
             int randID = (int) (Math.random() * vertices.length);
 
@@ -124,7 +121,6 @@ public class Infection extends Clusters {
                     epicenter.getClusterLabel());
 
             int clusterSize = cluster.size();
-            meanClusterSize += clusterSize;
 
             // Check to see if this new cluster will put us over the target error
             float infectionPercent = clusterSize + numInfected;
@@ -135,22 +131,12 @@ public class Infection extends Clusters {
                 infectedClusters.put(numClustersInfected, cluster);
 
                 numInfected += clusterSize;
-                numClustersInfected++;
             }
 
             float infectionError = Math.abs(1 - infectionPercent);
 
             if (infectionError <= error) {
                 break;
-            }
-
-            // Get a better idea as to how long this search should take
-            if (i == 100 && iterationThresh == vertices.length) {
-
-                int numUsersNeeded = targetPop - numInfected;
-                meanClusterSize /= 100;
-                float needToMean = (float) numUsersNeeded / meanClusterSize;
-                iterationThresh = (int) (100.0f * needToMean);
             }
         }
 

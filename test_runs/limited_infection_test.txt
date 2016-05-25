@@ -55,32 +55,32 @@ Infection menu; enter an option:
 ------------------------------------------------
 ------------------------------------------------
   limited_infection test 1:
-    target infected population: 1287
-    actual infected population: 384
+    target infected population: 1769
+    actual infected population: 1682
   limited_infection test 2:
-    target infected population: 106
-    actual infected population: 103
+    target infected population: 1566
+    actual infected population: 1488
   limited_infection test 3:
-    target infected population: 93
-    actual infected population: 89
+    target infected population: 831
+    actual infected population: 791
   limited_infection test 4:
-    target infected population: 1014
-    actual infected population: 282
+    target infected population: 569
+    actual infected population: 546
   limited_infection test 5:
-    target infected population: 1224
-    actual infected population: 345
+    target infected population: 1106
+    actual infected population: 1051
   limited_infection test 6:
-    target infected population: 1554
-    actual infected population: 469
+    target infected population: 218
+    actual infected population: 208
   limited_infection test 7:
-    target infected population: 191
-    actual infected population: 129
+    target infected population: 1467
+    actual infected population: 1394
   limited_infection test 8:
-    target infected population: 1319
-    actual infected population: 420
+    target infected population: 674
+    actual infected population: 641
   limited_infection test 9:
-    target infected population: 794
-    actual infected population: 220
+    target infected population: 1498
+    actual infected population: 1424
 ------------------------------------------------
 
 
